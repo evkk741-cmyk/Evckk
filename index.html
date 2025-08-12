@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEGIS 操作系统</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css">
+    <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@0.7.0",
+    "zustand/vanilla": "https://esm.sh/zustand@4.5.2/vanilla",
+    "zustand/middleware": "https://esm.sh/zustand@4.5.2/middleware",
+    "zustand/": "https://esm.sh/zustand@^5.0.0/"
+  }
+}
+</script>
+    
+  
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div class="desktop" id="desktop">
+      <!-- Window elements will be dynamically injected here -->
+    </div>
+    
+    <div id="aegis-sidebar">
+      <!-- AEGIS Sidebar will be dynamically injected here -->
+    </div>
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="start-menu">
+        <!-- Dynamically populated by JS -->
+    </div>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+        <button id="start-button" aria-label="打开开始菜单">
+          <img
+            src="https://storage.googleapis.com/gemini-95-ultimate-ui/grid.svg"
+            alt="Start Icon"
+            class="start-button-icon"
+          />
+        </button>
+        <div id="taskbar-apps"></div>
+    </div>
+    
+    <!-- App Dock -->
+    <div id="dock-container">
+        <!-- Dynamically populated by JS -->
+    </div>
+
+    <!-- System Tray moved to top-right -->
+    <div id="system-tray"></div>
+
+    <!-- Notification container -->
+    <div id="desktop-notification-container"></div>
+
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
