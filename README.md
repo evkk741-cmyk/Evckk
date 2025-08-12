@@ -1,4 +1,4 @@
-# AEGIS OS - The Ultimate UI
+# AEGIS OS - 
 
 ## Project Overview
 
