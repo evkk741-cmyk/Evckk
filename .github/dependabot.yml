@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # 如果是 Node.js 项目（npm 或 yarn）
+  - package-ecosystem: "npm"
+    directory: "/" # package.json 所在位置
+    schedule:
+      interval: "weekly"
+
+  # 如果是 Python 项目（pip）
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # 如果是 GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
